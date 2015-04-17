@@ -53,7 +53,7 @@ dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('s
 dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=T)
 
 # plot hairball
-# plot(dc_graph, vertex.size=1, vertex.label=NA)
+plot(dc_graph, vertex.size=1, vertex.label=NA)
 
 # compute degree distribution
 dc_degree_dist <- dc_edges %>%
